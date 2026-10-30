@@ -1,0 +1,35 @@
+# Resume Screening System — Backend Dependencies
+# Phase 1: Core API framework
+
+# ── Web Framework ──────────────────────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# ── Data Validation ────────────────────────────────────────────────────────────
+pydantic==2.14.1
+pydantic-core==2.50.1      # Must match pydantic's pinned requirement
+pydantic-settings==2.7.0   # BaseSettings (moved out of core in Pydantic v2)
+
+# ── Resume Parsing ─────────────────────────────────────────────────────────────
+PyMuPDF==1.25.1           # PDF parsing (fitz)
+python-docx==1.1.2        # DOCX parsing
+
+# ── NLP / Matching (Phase 2+) ─────────────────────────────────────────────────
+scikit-learn==1.6.0       # TF-IDF cosine similarity
+nltk==3.9.1               # Text preprocessing
+
+# ── File Handling ──────────────────────────────────────────────────────────────
+python-multipart==0.0.20  # Multipart form / file uploads
+
+# ── Database ───────────────────────────────────────────────────────────────────
+# SQLite is bundled with Python — no extra package needed for Phase 1.
+# SQLAlchemy added for Phase 2 ORM support:
+sqlalchemy==2.0.36
+
+# ── CORS (allow React dev server) ─────────────────────────────────────────────
+# Included with FastAPI via starlette — no extra install needed.
+
+# ── Dev / Testing ─────────────────────────────────────────────────────────────
+httpx==0.28.1             # Async test client for FastAPI
+pytest==8.3.4
+pytest-asyncio==0.24.0
