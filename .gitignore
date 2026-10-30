@@ -1,0 +1,78 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ─── Secrets & Environment Variables ─────────────────────────────────────────
+.env
+.env.*
+*.secret
+secrets.json
+
+# ─── Uploaded Resumes & User Data ────────────────────────────────────────────
+backend/uploads/
+*.pdf
+*.docx
+*.doc
+
+# ─── SQLite Databases ─────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Generated / Build Output ─────────────────────────────────────────────────
+backend/__pycache__/
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+
+# ─── IDE & OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local database and uploaded files
+*.db
+backend/uploads/
+uploads/
+
+# Logs
+*.log
